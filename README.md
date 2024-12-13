@@ -4,8 +4,6 @@ This project consists of two Python scripts: a **server** and a **client**. The 
 
 This keylogger is intended for educational purposes only. Unauthorized use may be illegal. Ensure that you have explicit permission before deploying such software.
 
-## Demo
-
 ![](./demos/python-keylogger-demo.gif)
 
 HD Demo: [Demo MP4](./demos/python-keylogger-demo.mp4)
@@ -23,9 +21,9 @@ HD Demo: [Demo MP4](./demos/python-keylogger-demo.mp4)
 
 ## How can this be used by Attackers?
 
-> Note: This is a Proof-of-Concept (PoC) and is not intended to be used for malicious purposes.
-
 A cybercriminal could create a malicious script that runs silently in the background, installing necessary Python libraries and executing the `client.py` script. Using the `server.py` script on their own system, they can track the victim's keystrokes to collect sensitive data, which could then be exploited for further attacks, such as credential theft or identity exploitation.
+
+> Note: This is a Proof-of-Concept (PoC) and is not intended to be used for malicious purposes.
 
 ## Components
 
@@ -43,13 +41,6 @@ A keylogger that:
 
 -   Listens to the keyboard using the `pynput` library.
 -   Sends each keystroke to the server via HTTP POST requests.
-
-## Features
-
--   Keystrokes are logged and displayed in real-time.
--   Option to download the logged keystrokes as a `.txt` file.
--   Adjustable time interval to fetch keystrokes (via command-line arguments).
--   Works in the background with minimal performance impact.
 
 ## Setup
 
