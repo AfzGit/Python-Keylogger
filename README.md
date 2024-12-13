@@ -119,4 +119,4 @@ The client will start listening for keystrokes and send them to the server in re
 3. **Persistence**: Ensure the script survives reboots and stops.
 4. **Anti-Forensics**: Erase activity traces to avoid detection.
 5. **Enhanced Keylogging**: Capture clipboard and screenshot data.
-6. **Text Readability**: Leverage AI/ML to enhance text clarity and summarize actions taken at specific points in time.
+6. **Text Readability**: Leverage AI/ML to enhance text clarity and infer actions taken at specific points in time.
