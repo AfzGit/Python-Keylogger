@@ -4,17 +4,28 @@ This project consists of two Python scripts: a **server** and a **client**. The 
 
 This keylogger is intended for educational purposes only. Unauthorized use may be illegal. Ensure that you have explicit permission before deploying such software.
 
-## How can this be used by Attackers?
-
-> Note: This is a Proof-of-Concept (PoC) and is not intended to be used for malicious purposes.
-
-A cybercriminal could create a malicious script that runs silently in the background, installing necessary Python libraries and executing the `client.py` script. Using the `server.py` script on their own system, they can track the victim's keystrokes to collect sensitive data, which could then be exploited for further attacks, such as credential theft or identity exploitation.
-
 ## Demo
 
 ![](./demos/python-keylogger-demo.gif)
 
 HD Demo: [Demo MP4](./demos/python-keylogger-demo.mp4)
+
+## Key Features
+
+-   🔧 **Modular Design**: Easy to customize with separate server and client components.
+-   ⚙️ **Real-time Logging**: Logs keystrokes instantly for analysis.
+-   📂 **Downloadable Logs**: Allows downloading keystroke data for offline review.
+-   🚀 **Low Resource Usage**: Runs in the background with minimal impact.
+-   🧑‍💻 **Customizable**: Configurable time intervals and port settings.
+-   ⚙️ **HTTP Communication**: Demonstrates basic network communication using POST requests.
+-   💡 **Educational Value**: Teaches keylogging concepts and attacker techniques.
+-   🛡️ **Security Awareness**: Highlights risks and encourages preventive measures.
+
+## How can this be used by Attackers?
+
+> Note: This is a Proof-of-Concept (PoC) and is not intended to be used for malicious purposes.
+
+A cybercriminal could create a malicious script that runs silently in the background, installing necessary Python libraries and executing the `client.py` script. Using the `server.py` script on their own system, they can track the victim's keystrokes to collect sensitive data, which could then be exploited for further attacks, such as credential theft or identity exploitation.
 
 ## Components
 
