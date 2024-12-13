@@ -32,9 +32,11 @@ A keylogger that:
 
 -   Python 3.x
 -   Install required libraries using pip:
-    `bash
+
+    ```
     pip install flask pynput requests
-    `
+    ```
+
     > Note: The `flash` package is only required for the server script.
 
 ### Running the Server
