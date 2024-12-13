@@ -2,6 +2,12 @@
 
 This project consists of two Python scripts: a **server** and a **client**. The **client** listens to the keyboard for keystrokes and sends them to the **server**. The **server** logs the keystrokes and provides an interface to view and download the logged data.
 
+## Demo
+
+![](./demos/python-keylogger-demo.gif)
+
+HD Demo: [Demo MP4](./demos/python-keylogger-demo.mp4)
+
 ## Components
 
 ### server.py
