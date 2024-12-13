@@ -2,6 +2,14 @@
 
 This project consists of two Python scripts: a **server** and a **client**. The **client** listens to the keyboard for keystrokes and sends them to the **server**. The **server** logs the keystrokes and provides an interface to view and download the logged data.
 
+This keylogger is intended for educational purposes only. Unauthorized use may be illegal. Ensure that you have explicit permission before deploying such software.
+
+## How can this be used by Attackers?
+
+> Note: This is a Proof-of-Concept (PoC) and is not intended to be used for malicious purposes.
+
+A cybercriminal could create a malicious script that runs silently in the background, installing necessary Python libraries and executing the `client.py` script. Using the `server.py` script on their own system, they can track the victim's keystrokes to collect sensitive data, which could then be exploited for further attacks, such as credential theft or identity exploitation.
+
 ## Demo
 
 ![](./demos/python-keylogger-demo.gif)
@@ -33,6 +41,13 @@ A keylogger that:
 -   Works in the background with minimal performance impact.
 
 ## Setup
+
+-   Clone the respository:
+
+```
+git clone https://github.com/AfzGit/Python-Keylogger
+cd Python-Keylogger
+```
 
 ### Prerequisites
 
@@ -95,6 +110,11 @@ The client will start listening for keystrokes and send them to the server in re
 
 4. Optionally, download the keystrokes via `http://127.0.0.1:5000/download`.
 
-## Security Warning
+## Future Improvements
 
-This keylogger is intended for educational purposes only. Unauthorized use may be illegal. Ensure that you have explicit permission before deploying such software.
+1. **Encryption**: Secure communication between client and server.
+2. **Obfuscation**: Conceal the script to evade detection.
+3. **Persistence**: Ensure the script survives reboots and stops.
+4. **Anti-Forensics**: Erase activity traces to avoid detection.
+5. **Enhanced Keylogging**: Capture clipboard and screenshot data.
+6. **Text Readability**: Leverage AI/ML to enhance text clarity and summarize actions taken at specific points in time.
