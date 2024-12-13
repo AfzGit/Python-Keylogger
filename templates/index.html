@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Keylogger Output</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 900px;
+            }
+            h1 {
+                font-size: 24px;
+                color: #333;
+                text-align: center;
+            }
+            textarea {
+                width: 100%;
+                font-family: monospace;
+                font-size: 14px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                background-color: #f9f9f9;
+                color: #333;
+                resize: vertical;
+                box-sizing: border-box;
+            }
+            a {
+                display: block;
+                margin-top: 10px;
+                text-align: center;
+                text-decoration: none;
+                color: #007bff;
+                font-size: 16px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <script>
+            function fetchKeystrokes() {
+                fetch('/keystrokes').then(response => response.text()).then(data => {
+                    document.getElementById('keystroke-area').value = data;
+                }).catch(error => console.error('Error fetching keystrokes:', error));
+            }
+            setInterval(fetchKeystrokes, {{ time }});  // Use the time interval here
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Captured Keystrokes</h1>
+            <textarea id="keystroke-area" rows="20" readonly></textarea>
+            <a href="/download">Download as TXT</a>
+        </div>
+    </body>
+</html>
